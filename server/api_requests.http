@@ -1,0 +1,25 @@
+POST http://localhost:4000/shifts
+Content-Type: application/json
+
+{
+    "shiftType": "Bartender",
+    "hoursWorked": 7,
+    "totalCardTips": 190,
+    "totalCashTips": 65
+}
+###
+DELETE http://localhost:4000/shifts/66bad965324f9f31090b0dd3
+Content-Type: application/json
+###
+PUT http://localhost:4000/shifts/66b94278fc821fb5d612e8b7
+Content-Type: application/json
+
+{
+    "shiftType": "server",
+    "hoursWorked": 6,
+    "totalCardTips": 0,
+    "totalCashTips": 100
+}
+###
+GET http://localhost:4000/shifts
+Content-Type: application/json

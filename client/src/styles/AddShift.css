@@ -1,0 +1,71 @@
+#add-shift-form {
+<<<<<<< HEAD
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35%;
+  height: 100%;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid #12284d;
+}
+#add-shift-btn {
+  margin-top: 40px;
+  width: 40%;
+  font-size: 1rem;
+}
+#add-back-arrow {
+  position: relative;
+  left: -45%;
+  top: -35%;
+}
+.add-input-field {
+  background-color: #a5b7d4;
+  font-size: 0.9rem;
+  min-width: 10%;
+  max-width: 50%;
+  width: 30%;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid #12284d;
+  height: 100%;
+}
+.add-shift-input {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+=======
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 35%;
+	height: 100%;
+	align-items: center;
+}
+#add-shift-btn {
+	margin-top: 40px;
+	width: 40%;
+}
+
+.add-input-field {
+	background-color: #a5b7d4;
+	font-size: 0.9rem;
+	min-width: 10%;
+	max-width: 50%;
+	width: 30%;
+	text-align: center;
+	height: 100%;
+}
+.add-shift-input {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	font-size: 1.2rem;
+	padding: 10px;
+	border-radius: 5px;
+>>>>>>> 956fba5c3e37223177728698a58d59d22a200e39
+}
