@@ -3,9 +3,9 @@ Content-Type: application/json
 
 {
     "shiftType": "Bartender",
-    "hoursWorked": 7,
-    "totalCardTips": 190,
-    "totalCashTips": 65
+    "hoursWorked": 8.25,
+    "totalCardTips": 190.55,
+    "totalCashTips": 10
 }
 ###
 DELETE http://localhost:4000/shifts/66bad965324f9f31090b0dd3

@@ -26,8 +26,9 @@ const ShiftView = ({ shift, onDelete }: Props) => {
   return (
     <li key={shift._id} id='shift-view'>
       {shift.shiftType} shift on {formattedDate} for {shift.hoursWorked} hours |
-      Card tips: {shift.totalCardTips} | Cash tips: {shift.totalCashTips} |
-      $/hr: {calc.totalHourly()} | total $: {calc.totalMoney()}{' '}
+      Card tips: ${shift.totalCardTips} | Cash tips: ${shift.totalCashTips} |
+      $/hr: ${calc.totalMoneyPerHour().toFixed(2)} | total $: $
+      {calc.totalMoney().toFixed(2)}{' '}
       <button
         className='shift-view-delete'
         onClick={() => handleDelete(shift._id)}
