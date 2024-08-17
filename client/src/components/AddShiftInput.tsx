@@ -24,6 +24,7 @@ const AddShiftInput = ({ fieldName, onChange }: Props) => {
       <label htmlFor={inputName}>{label()}</label>
       <input
         id={inputName}
+        autoComplete='off'
         className='add-input-field'
         type='text'
         name={inputName}

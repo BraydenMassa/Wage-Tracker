@@ -16,9 +16,11 @@ const Statistics = () => {
   }, [])
   return (
     <div id='statistics-container'>
-      <BackArrow id='stats-back-arrow' />
-      <h1 id='statistics-heading'>Statistics</h1>
+      <h1 className='heading' id='statistics-heading'>
+        Statistics
+      </h1>
       <main id='statistics-main'>
+        <BackArrow id='stats-back-arrow' />
         <h2>Total hours worked: {statsCalc?.totalHours()}</h2>
         <h2>Total money: ${statsCalc?.totalMoney().toFixed(2)}</h2>
         <h2>

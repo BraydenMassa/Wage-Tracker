@@ -17,6 +17,7 @@ const ViewShifts = () => {
   useEffect(() => {
     const fetchShifts = async () => {
       try {
+        setLoading(true)
         const res = await axios.get('http://localhost:4000/shifts')
         setShifts(res.data)
       } catch (err) {
@@ -30,16 +31,18 @@ const ViewShifts = () => {
 
   if (loading) return <div>Loading shifts...</div>
   if (error) return <div>{error}</div>
-  console.log(shifts)
+  const reversedShifts = [...shifts].reverse()
   return (
     <div id='view-shifts-container'>
       <BackArrow id='view-back-arrow' />
       {shifts.length === 0 && <h1 id='no-shifts'>There are no shifts.</h1>}
       {shifts.length > 0 && (
         <>
-          <h1 id='view-shifts-heading'>Shifts</h1>
+          <h1 className='heading' id='view-shifts-heading'>
+            Shifts
+          </h1>
           <ul id='view-shifts-list'>
-            {shifts.map((shift: Shift) => (
+            {reversedShifts.map((shift: Shift) => (
               <ShiftView shift={shift} onDelete={handleDeleteShift} />
             ))}
           </ul>

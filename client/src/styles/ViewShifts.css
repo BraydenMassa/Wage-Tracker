@@ -1,28 +1,26 @@
+/* View Shifts Page */
+
 #view-shifts-container {
   cursor: default;
+  user-select: none;
 }
-
 #view-shifts-heading {
   text-align: center;
+  background-color: #6d93d1;
 }
-
 #no-shifts {
   position: absolute;
   left: 50%;
   top: 20%;
   transform: translate(-50%, -30%);
 }
-
 #shift-view {
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  margin-bottom: 0 auto 15px;
   width: 90%;
   border: 1px solid black;
   border-radius: 10px;
-  margin: 0 auto;
-  list-style: none;
   height: 8vh;
-  margin-bottom: 15px;
   background-color: #a5b7d4;
   color: #12284d;
   display: flex;
@@ -35,12 +33,16 @@
   margin-top: 30px;
 }
 .shift-view-delete {
-  padding: 3px;
+  padding: 2px 5px;
   border-radius: 5px;
   font-size: 0.8rem;
   height: 70%;
   background-color: rgb(170, 109, 109);
   cursor: pointer;
+  border: 2px solid #12284d;
+}
+.shift-view-delete:active {
+  font-size: 0.85rem;
 }
 #view-back-arrow-img {
   background-color: #6d93d1;

@@ -1,0 +1,12 @@
+.back-arrow {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+.back-arrow-img:hover {
+  width: 55px;
+  height: 55px;
+}
+.back-arrow-img {
+  background-color: #a5b7d4;
+}

@@ -3,11 +3,16 @@ import AddShiftInput from '../components/AddShiftInput'
 import BackArrow from '../components/BackArrow'
 import { ChangeEvent, FormEvent, SetStateAction, useState } from 'react'
 import axios from 'axios'
+import SelectShiftType from '../components/SelectShiftType'
+import { useNavigate } from 'react-router-dom'
 
 const AddShift = () => {
   const [hoursWorked, setHours] = useState('')
   const [totalCardTips, setCardTips] = useState('')
   const [totalCashTips, setCashTips] = useState('')
+  const [shiftType, setShiftType] = useState('Server')
+
+  const navigate = useNavigate()
 
   const isValidNumber = (value: string): boolean => {
     return !isNaN(Number(value)) && value.trim() !== ''
@@ -24,6 +29,7 @@ const AddShift = () => {
     e.preventDefault()
     if (isFormValid()) {
       const shiftData = {
+        shiftType,
         hoursWorked: Number(hoursWorked),
         totalCardTips: Number(totalCardTips),
         totalCashTips: Number(totalCashTips),
@@ -33,6 +39,8 @@ const AddShift = () => {
         setHours('')
         setCardTips('')
         setCashTips('')
+        console.log(res)
+        navigate('/view')
       } catch (err) {
         console.error('Error submitting form: ', err)
       }
@@ -64,6 +72,7 @@ const AddShift = () => {
             }
             fieldName='totalCashTips'
           />
+          <SelectShiftType shiftType={shiftType} setShiftType={setShiftType} />
           <input
             type='submit'
             id='add-shift-btn'
