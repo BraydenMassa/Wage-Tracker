@@ -40,8 +40,8 @@
 }
 #add-back-arrow {
   position: relative;
-  left: -45%;
-  top: -35%;
+  left: -46%;
+  top: -26%;
 }
 .select-shift-radio {
   padding: 3px 7px;
@@ -53,4 +53,7 @@
   width: 80%;
   display: flex;
   justify-content: space-between;
+}
+.select-shift-radio-input {
+  cursor: pointer;
 }
