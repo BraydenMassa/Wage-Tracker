@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import AddShift from './pages/AddShift'
 import ViewShifts from './pages/ViewShifts'
 import Statistics from './pages/Statistics'
-import './styles/Main.css'
+import './styles/main.css'
 
 function App() {
   return (

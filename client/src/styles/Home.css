@@ -1,16 +1,15 @@
-/* Home Page */
-
-#home-heading,
-#home-links {
-  background-color: #a5b7d4;
+#home-heading {
+  padding-top: 5rem;
 }
 #home-links {
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 10%;
-  width: 26%;
-  text-align: center;
-  justify-content: space-between;
-  height: 80%;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  max-width: 70%;
+  min-height: 30%;
+  width: 45%;
+  padding: 3rem;
+  gap: 1.5rem 0;
 }

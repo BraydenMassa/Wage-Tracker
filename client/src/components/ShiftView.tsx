@@ -1,6 +1,5 @@
 import { Shift } from '../types/ShiftType'
 import WageCalculator from '../WageCalculator'
-import '../styles/Main.css'
 import axios from 'axios'
 
 type Props = {

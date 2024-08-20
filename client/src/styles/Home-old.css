@@ -1,0 +1,16 @@
+/* Home Page */
+
+#home-heading,
+#home-links {
+  background-color: #a5b7d4;
+}
+#home-links {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 10%;
+  width: 26%;
+  text-align: center;
+  justify-content: space-between;
+  height: 80%;
+}

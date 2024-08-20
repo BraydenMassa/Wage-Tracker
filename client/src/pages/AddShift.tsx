@@ -1,4 +1,3 @@
-import '../styles/AddShift.css'
 import AddShiftInput from '../components/AddShiftInput'
 import BackArrow from '../components/BackArrow'
 import { ChangeEvent, FormEvent, SetStateAction, useState } from 'react'
@@ -49,8 +48,8 @@ const AddShift = () => {
     }
   }
   return (
-    <div id='add-shift-container'>
-      <main className='main' id='add-shift-main'>
+    <div className='container'>
+      <main className='main'>
         <BackArrow id='add-back-arrow' />
         <h1 className='heading'>Add Shift</h1>
         <form onSubmit={handleSubmit} id='add-shift-form'>

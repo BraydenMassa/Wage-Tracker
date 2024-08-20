@@ -1,0 +1,57 @@
+/* General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background-color: #6d93d1;
+  font-family: 'Helvetica';
+}
+
+/* Buttons */
+
+.btn:hover {
+  font-size: 1.2rem;
+  background-color: #24395c;
+  color: #a5b7d4;
+  padding: 10px 30px;
+}
+.btn {
+  border: 2px solid #24395c;
+  border-radius: 7px;
+  padding: 10px;
+  color: #24395c;
+  background-color: #a5b7d4;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Main Container */
+
+.main {
+  height: 70vh;
+  width: 60vw;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -30%);
+  border-radius: 20px;
+  padding: 100px 0;
+  background-color: #a5b7d4;
+  border: 3px solid #12284d;
+}
+
+/* Headings */
+
+.heading {
+  color: #12284d;
+  background-color: #a5b7d4;
+  cursor: default;
+}

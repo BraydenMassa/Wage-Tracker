@@ -1,0 +1,38 @@
+/* Statistics Page */
+
+#statistics-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  user-select: none;
+}
+#statistics-main {
+  border: 3px solid #12284d;
+  border-radius: 10px;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #a5b7d4;
+  color: #12284d;
+}
+#statistics-heading {
+  text-align: center;
+  margin-top: 30px;
+  background-color: #6d93d1;
+}
+#statistics-main,
+#statistics-main > h2 {
+  background-color: #a5b7d4;
+}
+#stats-back-arrow-img {
+  position: relative;
+  transform: translate(35%, -20%);
+}
+#stats-back-arrow {
+  background-color: #a5b7d4;
+}

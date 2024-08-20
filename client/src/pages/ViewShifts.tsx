@@ -2,7 +2,6 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { Shift } from '../types/ShiftType'
 import ShiftView from '../components/ShiftView'
-import '../styles/ViewShifts.css'
 import BackArrow from '../components/BackArrow'
 
 const ViewShifts = () => {

@@ -1,6 +1,5 @@
 import StatisticsCalculator from '../StatisticsCalculator'
 import { useState, useEffect } from 'react'
-import '../styles/Statistics.css'
 import BackArrow from '../components/BackArrow'
 
 const Statistics = () => {
@@ -15,11 +14,11 @@ const Statistics = () => {
     initializeStatsCalc()
   }, [])
   return (
-    <div id='statistics-container'>
+    <div className='container'>
       <h1 className='heading' id='statistics-heading'>
         Statistics
       </h1>
-      <main id='statistics-main'>
+      <main className='main'>
         <BackArrow id='stats-back-arrow' />
         <h2>Total hours worked: {statsCalc?.totalHours()}</h2>
         <h2>Total money: ${statsCalc?.totalMoney().toFixed(2)}</h2>

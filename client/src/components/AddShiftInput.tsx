@@ -1,5 +1,4 @@
 import { ChangeEvent } from 'react'
-import '../styles/AddShift.css'
 
 type Props = {
   fieldName: string
