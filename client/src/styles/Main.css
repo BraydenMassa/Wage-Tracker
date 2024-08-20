@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: system-ui;
 }
 body,
 html,
@@ -19,7 +20,8 @@ html,
   user-select: none;
 }
 .main {
-  border: 1px solid black;
+  border: 2px solid #24395c;
+  background-color: #a5b7d4;
   max-width: 800px;
   width: 100%;
   height: 50%;
@@ -31,5 +33,23 @@ html,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: gray;
+}
+.btn {
+  border: 2px solid #24395c;
+  border-radius: 7px;
+  padding: 1.1rem;
+  color: #24395c;
+  background-color: #a5b7d4;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  width: 70%;
+  max-width: 200px;
+  min-width: 150px;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #24395c;
+  color: #a5b7d4;
 }

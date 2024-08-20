@@ -1,12 +1,12 @@
 #home-heading {
   padding-top: 5rem;
+  color: #24395c;
 }
 #home-links {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
   max-width: 70%;
   min-height: 30%;
   width: 45%;
