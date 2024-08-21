@@ -1,10 +1,5 @@
-/* View Shifts Page */
-
 #view-shifts-container {
-  cursor: default;
   user-select: none;
-}
-#view-shifts-heading {
 }
 #no-shifts {
   position: absolute;

@@ -1,9 +1,10 @@
 import AddShiftInput from '../components/AddShiftInput'
 import BackArrow from '../components/BackArrow'
-import { ChangeEvent, FormEvent, SetStateAction, useState } from 'react'
+import { ChangeEvent, FormEvent, useState } from 'react'
 import axios from 'axios'
 import SelectShiftType from '../components/SelectShiftType'
 import { useNavigate } from 'react-router-dom'
+import '../styles/AddShift.css'
 
 const AddShift = () => {
   const [hoursWorked, setHours] = useState('')
@@ -49,9 +50,10 @@ const AddShift = () => {
   }
   return (
     <div className='container'>
+      <h1 className='heading'>Add Shift</h1>
       <main className='main'>
         <BackArrow id='add-back-arrow' />
-        <h1 className='heading'>Add Shift</h1>
+
         <form onSubmit={handleSubmit} id='add-shift-form'>
           <AddShiftInput
             onChange={(e: ChangeEvent<HTMLInputElement>) =>

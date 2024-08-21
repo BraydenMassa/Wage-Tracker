@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { Shift } from '../types/ShiftType'
 import ShiftView from '../components/ShiftView'
 import BackArrow from '../components/BackArrow'
+import '../styles/ViewShifts.css'
 
 const ViewShifts = () => {
   const [shifts, setShifts] = useState<Shift[]>([])

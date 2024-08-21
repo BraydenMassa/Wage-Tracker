@@ -4,9 +4,7 @@ import '../styles/home.css'
 const Home = () => {
   return (
     <div className='container'>
-      <h1 id='home-heading' className='heading'>
-        Welcome to Wage Tracker!
-      </h1>
+      <h1 className='heading'>Welcome to Wage Tracker!</h1>
       <main className='main'>
         <div id='home-links'>
           <Link className='btn' to='/add'>

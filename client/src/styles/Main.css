@@ -20,12 +20,14 @@ html,
   user-select: none;
 }
 .main {
+  position: relative;
   border: 2px solid #24395c;
   background-color: #a5b7d4;
   max-width: 800px;
-  width: 100%;
+  min-width: 300px;
+  width: 45vw;
   height: 50%;
-  min-height: 400px;
+  min-height: 200px;
   margin: auto;
   border-radius: 10px;
   padding: 1.5rem;
@@ -33,23 +35,33 @@ html,
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: auto;
 }
 .btn {
   border: 2px solid #24395c;
   border-radius: 7px;
-  padding: 1.1rem;
+  padding: 1rem;
   color: #24395c;
   background-color: #a5b7d4;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
-  width: 70%;
+  width: 80%;
   max-width: 200px;
   min-width: 150px;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
 }
 .btn:hover,
 .btn:focus {
   background-color: #24395c;
   color: #a5b7d4;
+}
+.heading {
+  padding-top: 5rem;
+  color: #24395c;
 }

@@ -1,22 +1,25 @@
-/* Add Shift Page */
-
 #add-shift-form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 35%;
-  height: 80%;
+  width: 65%;
+  height: 85%;
   align-items: center;
-  padding: 10px;
+  padding: 1.1rem;
   border-radius: 10px;
-  border: 3px solid #12284d;
+  border: 2px solid #12284d;
 }
 .add-shift-input {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 10px;
+}
+#add-shift-btn {
+  font-size: 1.1rem;
+  padding: 0;
+  width: 10%;
 }
 .add-input-field {
   background-color: #a5b7d4;
@@ -25,16 +28,6 @@
   text-align: center;
   border-radius: 5px;
   border: 2px solid #12284d;
-}
-#add-shift-btn {
-  margin-top: 40px;
-  width: 40%;
-  font-size: 1rem;
-}
-#add-back-arrow {
-  position: relative;
-  left: -46%;
-  top: -26%;
 }
 .select-shift-radio {
   padding: 3px 7px;
