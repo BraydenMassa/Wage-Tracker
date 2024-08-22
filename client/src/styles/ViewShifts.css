@@ -9,9 +9,9 @@
 }
 #shift-view {
   font-size: 1.2rem;
-  margin-bottom: 0 auto 15px;
+  margin: 0 auto 15px;
   width: 90%;
-  border: 1px solid black;
+  border: 1px solid #12284d;
   border-radius: 10px;
   height: 8vh;
   background-color: #a5b7d4;
@@ -24,6 +24,9 @@
 #view-shifts-list {
   text-align: center;
   margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .shift-view-delete {
   padding: 2px 5px;

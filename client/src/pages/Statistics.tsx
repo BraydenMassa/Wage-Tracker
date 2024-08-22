@@ -1,6 +1,7 @@
 import StatisticsCalculator from '../StatisticsCalculator'
 import { useState, useEffect } from 'react'
 import BackArrow from '../components/BackArrow'
+import '../styles/Statistics.css'
 
 const Statistics = () => {
   const [statsCalc, setStatsCalc] = useState<StatisticsCalculator | null>(null)
@@ -18,21 +19,21 @@ const Statistics = () => {
       <h1 className='heading' id='statistics-heading'>
         Statistics
       </h1>
-      <main className='main'>
+      <main id='stats-main' className='main'>
         <BackArrow id='stats-back-arrow' />
-        <h2>Total hours worked: {statsCalc?.totalHours()}</h2>
-        <h2>Total money: ${statsCalc?.totalMoney().toFixed(2)}</h2>
-        <h2>
+        <p>Total hours worked: {statsCalc?.totalHours()}</p>
+        <p>Total money: ${statsCalc?.totalMoney().toFixed(2)}</p>
+        <p>
           Total average hourly rate: ${statsCalc?.totalHourlyRate().toFixed(2)}
-        </h2>
-        <h2>
+        </p>
+        <p>
           Total Serving hourly rate: $
           {statsCalc?.totalHourlyRateServing().toFixed(2)}
-        </h2>
-        <h2>
+        </p>
+        <p>
           Total Bartending hourly rate: $
           {statsCalc?.totalHourlyRateBartending().toFixed(2)}
-        </h2>
+        </p>
       </main>
     </div>
   )
