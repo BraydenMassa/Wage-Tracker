@@ -21,7 +21,7 @@ const Statistics = () => {
       </h1>
       <main id='stats-main' className='main'>
         <BackArrow id='stats-back-arrow' />
-        <p>Total hours worked: {statsCalc?.totalHours()}</p>
+        <p>Total hours worked: {statsCalc?.totalHours().toFixed(1)}</p>
         <p>Total money: ${statsCalc?.totalMoney().toFixed(2)}</p>
         <p>
           Total average hourly rate: ${statsCalc?.totalHourlyRate().toFixed(2)}
